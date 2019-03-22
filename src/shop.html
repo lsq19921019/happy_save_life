@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>乐省生活</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="body_bgc">
+<div class="content shop_index">
+    <div class="head">
+        <img src="img/pic.png" alt="">
+    </div>
+    <div class="shop_info bgwhite marginb">
+        <div class="title tac">正品官方旗舰店</div>
+        <div class="media_desc color999 fz20">
+            <p class="marginR">商品数量 888</p>
+            <p class="marginL">已拼 1328件</p>
+        </div>
+        <div class="info_tip">
+            <div class="tip_item">
+                <span class="color999">描述相符 </span>4.1<span class="bgColRed label">高</span>
+            </div>
+            <div class="tip_item">
+                <span class="color999">卖家服务 </span>4.9<span class="bgColRed label">高</span>
+            </div>
+            <div class="tip_item">
+                <span class="color999">物流服务 </span>4.8<span class="bgColRed label">高</span>
+            </div>
+        </div>
+        <div class="search_box">
+            <input class="search_input" type="search" placeholder="搜索店内商品">
+            <span class="my_icon icon_search"></span>
+
+        </div>
+    </div>
+
+
+    <div class="filter weui-flex bgwhite">
+        <p class="active">综合</p>
+        <p>销量</p>
+        <!-- low_price: 低价， high_price：高价 -->
+        <p class="coupon_sort low_price">券后价</p>
+        <p class="sort2"><img src="img/sort2.png" alt=""></p>
+    </div>
+
+    <div class="good_box">
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/pic.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                <div class="media_desc shop">
+                    <img src="img/shop.png" alt="">
+                    <span class="color666 fz22">减肥茶专营店</span>
+                </div>
+                <div class="media_desc buy_num">
+                    <div class="share">
+                        <p>119人已买</p>
+                        <span>分享赚￥58.00</span>
+                    </div>
+                    <div class="card">110元券</div>
+                </div>
+                <p class="media_desc price">
+                    <span class="color_red">￥70</span>
+                    <span class="color999 fz20">原价100元</span>
+                </p>
+            </div>
+        </a>
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/pic.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                <div class="media_desc shop">
+                    <img src="img/shop.png" alt="">
+                    <span class="color666">减肥茶专营店</span>
+                </div>
+                <div class="media_desc buy_num">
+                    <div class="share">
+                        <p>119人已买</p>
+                    </div>
+                    <div class="card">110元券</div>
+                </div>
+                <p class="media_desc price">
+                    <span class="color_red">￥70</span>
+                    <span class="color999 fz20">原价100元</span>
+                </p>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+<script src="js/libs/jquery.min.js"></script>
+<script type="application/javascript" src="js/libs/fastclick.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+
+    $('.sort2').click(function () {
+        $('.good_box').toggleClass('grid');
+    });
+
+</script>
+</body>
+</html>

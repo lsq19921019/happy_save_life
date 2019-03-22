@@ -1,0 +1,104 @@
+.head {
+  background-color: #FF2A31;
+  color: #ffffff; }
+
+.head_earning {
+  position: relative;
+  height: 5.76rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .head_earning .no_earning {
+    font-size: 0.832rem;
+    margin-bottom: 0.32rem; }
+  .head_earning .today_earning {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3.552rem;
+    height: 3.552rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .head_earning .today_tip {
+    position: absolute;
+    right: -2.56rem;
+    top: 0; }
+  .head_earning .tip_text {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 0.16rem; }
+    .head_earning .tip_text:before {
+      content: '';
+      position: absolute;
+      left: -50%;
+      bottom: 40%;
+      width: 0.8rem;
+      height: 1px;
+      background-color: #fff;
+      transform: rotate(-30deg);
+      -o-transform: rotate(-30deg);
+      -moz-transform: rotate(-30deg);
+      -webkit-transform: rotate(-30deg); }
+  .head_earning .earning_intro {
+    position: absolute;
+    bottom: 1.056rem;
+    right: 0;
+    width: 2.784rem;
+    height: 0.96rem; }
+
+.nav_box {
+  padding: 0.32rem;
+  background: rgba(0, 0, 0, 0.2); }
+  .nav_box .nav_item {
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #F6F5F5; }
+    .nav_box .nav_item:nth-last-child(1) {
+      border-right: none; }
+
+.list_item img {
+  width: 0.544rem;
+  height: 0.544rem; }
+
+.earning_items {
+  background-color: #fff;
+  margin-bottom: 0.32rem; }
+  .earning_items .earning_item_h {
+    padding: 0.256rem;
+    border-bottom: 1px solid #F6F5F5;
+    text-align: center; }
+    .earning_items .earning_item_h p {
+      width: 50%;
+      font-size: 0.352rem; }
+      .earning_items .earning_item_h p:nth-child(1) {
+        border-right: 1px solid #F6F5F5; }
+      .earning_items .earning_item_h p.active {
+        color: #FF2B33;
+        font-size: 0.48rem; }
+  .earning_items .nav_box {
+    background: transparent; }
+  .earning_items .nav_item {
+    border-right: none; }
+
+.detail_list .date {
+  height: 1.44rem;
+  line-height: 1.44rem;
+  padding: 0 0.32rem; }
+.detail_list .title {
+  font-size: 0.512rem; }
+.detail_list .time {
+  font-size: 0.32rem;
+  color: #999999; }
+.detail_list .list_item {
+  border-bottom: 1px solid #F6F5F5; }
+  .detail_list .list_item:nth-last-child(1) {
+    border-bottom: none; }
+
+/*# sourceMappingURL=myEarnings.css.map */

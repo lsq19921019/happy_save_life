@@ -1,0 +1,90 @@
+.head {
+  padding-top: 0.576rem; }
+  .head .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    padding-left: 0.32rem;
+    padding-bottom: 0.48rem; }
+  .head .img_box img {
+    width: 1.664rem;
+    height: 1.664rem;
+    border-radius: 50%; }
+  .head .user_info {
+    position: relative; }
+  .head .role_label {
+    padding: 0 0.16rem;
+    background-color: #fff;
+    font-size: 9px;
+    color: #FF2B33;
+    position: absolute;
+    bottom: 0;
+    left: -6px;
+    border-radius: 0.32rem; }
+    .head .role_label img {
+      width: 0.352rem;
+      height: 0.352rem; }
+  .head .copy {
+    font-size: 0.288rem;
+    border: 1px solid #ffffff;
+    padding: 0 0.16rem;
+    border-radius: 0.064rem; }
+
+.bind_item {
+  background-color: #fff;
+  color: #FF2B33;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.32rem;
+  border-top-left-radius: 0.384rem;
+  border-bottom-left-radius: 0.384rem;
+  padding: 0.128rem 0.32rem; }
+  .bind_item p {
+    margin: 0 0.16rem; }
+  .bind_item img {
+    width: 0.352rem;
+    height: 0.352rem; }
+  .bind_item i {
+    font-size: 0.352rem; }
+
+.earning_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0.48rem;
+  border-top-left-radius: 0.16rem;
+  border-top-right-radius: 0.16rem;
+  padding: 0.8rem 0.48rem 0; }
+  .earning_total .money {
+    font-size: 0.544rem; }
+  .earning_total .cash_btn {
+    padding: 0.16rem 0.64rem;
+    border-radius: 0.448rem; }
+
+.earning_list {
+  margin: 0 0.48rem;
+  border-bottom-right-radius: 0.16rem;
+  border-bottom-left-radius: 0.16rem; }
+
+.nav_box {
+  background-color: #fff;
+  margin-bottom: 0.32rem;
+  flex-wrap: wrap;
+  padding-top: 0.32rem; }
+  .nav_box .nav_item {
+    text-align: center;
+    padding-bottom: 0.32rem; }
+  .nav_box img {
+    width: 0.96rem;
+    height: 0.96rem; }
+  .nav_box .min_img {
+    width: 0.64rem;
+    height: 0.64rem; }
+  .nav_box p {
+    font-size: 0.384rem; }
+  .nav_box .nav_item {
+    width: 25%; }
+
+/*# sourceMappingURL=person.css.map */

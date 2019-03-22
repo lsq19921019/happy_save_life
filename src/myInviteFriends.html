@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>乐省生活</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myGetCash.css">
+</head>
+<body>
+<div class="content">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature3.jpg" alt="https://www.swiper.com.cn/demo/img/nature3.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature5.jpg" alt="https://www.swiper.com.cn/demo/img/nature5.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature9.jpg" alt="https://www.swiper.com.cn/demo/img/nature9.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature8.jpg" alt="https://www.swiper.com.cn/demo/img/nature8.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature4.jpg" alt="https://www.swiper.com.cn/demo/img/nature4.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature2.jpg" alt="https://www.swiper.com.cn/demo/img/nature2.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature10.jpg" alt="https://www.swiper.com.cn/demo/img/nature10.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature1.jpg" alt="https://www.swiper.com.cn/demo/img/nature1.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature6.jpg" alt="https://www.swiper.com.cn/demo/img/nature6.jpg">
+            </div>
+            <div class="swiper-slide" style="background-image:url('')">
+                <img src="https://www.swiper.com.cn/demo/img/nature7.jpg" alt="https://www.swiper.com.cn/demo/img/nature7.jpg">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="invite_tip fz22">成功邀请的好友每下一单，你都能从中获得收益</div>
+    <div class="save_poster">
+        <img src="img/save_img.png" alt="">
+        <span>一键保存专属海报</span>
+    </div>
+
+
+
+</div>
+
+
+<script src="js/libs/jquery.min.js"></script>
+<script type="application/javascript" src="js/libs/fastclick.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop : true,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        initialSlide :1,//默认第二个
+        slidesPerView: 2.1,//可见个数2
+        centeredSlides: true,//居中
+
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+    
+    $(document).ready(function(){
+        $('.save_poster').click(function(){
+            
+        var   link = document.createElement('a');
+            link.setAttribute("download", "");
+            link.href = $('.swiper-slide-active>img').attr('src');
+            link.click();
+            // window.location.href=$('.swiper-slide-active>img').attr('src'); 
+        });
+    });
+
+</script>
+</body>
+</html>

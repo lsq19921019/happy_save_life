@@ -1,0 +1,105 @@
+@import "base";
+.head {
+  padding-top: rem(36);
+  .info {
+    @include rowBetween;
+    align-items: flex-start;
+    padding-left: rem(20);
+    padding-bottom: rem(30);
+  }
+  .img_box {
+    img {
+      width: rem(104);
+      height: rem(104);
+      border-radius: 50%;
+    }
+  }
+  .user_info {
+    position: relative;
+  }
+  .role_label {
+    padding: 0 rem(10);
+    background-color: #fff;
+    font-size: 9px;
+    color: $primaryRed;
+    position: absolute;
+    bottom: 0;
+    left: -6px;
+    border-radius: rem(20);
+    img {
+      width: rem(22);
+      height: rem(22);
+    }
+  }
+  .copy {
+    font-size: rem(18);
+    border: 1px solid #ffffff;
+    padding: 0 rem(10);
+    border-radius: rem(4);
+  }
+}
+
+.bind_item {
+  background-color: #fff;
+  color: $primaryRed;
+  @include rowBetween;
+  font-size: $fontsize_desc20;
+  border-top-left-radius: rem(24);
+  border-bottom-left-radius: rem(24);
+  padding: rem(8) rem(20);
+  p {
+    margin: 0 rem(10);
+  }
+  img {
+    width: rem(22);
+    height: rem(22);
+  }
+  i {
+    font-size: rem(22);
+  }
+}
+.earning_total {
+  @include rowBetween;
+  margin: 0 rem(30);
+  border-top-left-radius: rem(10);
+  border-top-right-radius: rem(10);
+  padding: rem(50) rem(30) 0;
+  .money {
+    font-size: $fontsize_nav;
+  }
+  .cash_btn {
+    padding: rem(10) rem(40);
+    border-radius: rem(28);
+  }
+}
+.earning_list {
+  margin: 0 rem(30);
+  border-bottom-right-radius: rem(10);
+  border-bottom-left-radius: rem(10);
+}
+.nav_box {
+  background-color: #fff;
+  margin-bottom: rem(20);
+  flex-wrap: wrap;
+  padding-top: rem(20);
+  .nav_item {
+    text-align: center;
+    padding-bottom: rem(20);
+  }
+  img {
+    width: rem(60);
+    height: rem(60);
+  }
+  .min_img {
+    width: rem(40);
+    height: rem(40);
+  }
+  p {
+    font-size: $fontsize_desc24;
+  }
+  .nav_item {
+    width: 25%;
+  }
+}
+
+

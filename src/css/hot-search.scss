@@ -1,0 +1,23 @@
+@import "base";
+.head_img {
+  // width: rem(750);
+  width: 100%;
+  height: rem(260);
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.weui-navbar {
+  position: relative;
+  margin-bottom: rem(20);
+}
+.weui-navbar__item.weui-bar__item--on {
+  border-bottom: none;
+  color: $primaryRed;
+}
+.media_box_item {
+  margin-bottom: rem(20);
+}
+
+

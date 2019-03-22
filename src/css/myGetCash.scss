@@ -1,0 +1,46 @@
+@import "base";
+
+.weui-cells_form {
+  margin: rem(20);
+  .weui-cell {
+    &:before {
+      left: 0;
+
+    }
+  }
+  .weui-label {
+    width: rem(120);
+  }
+}
+
+.swiper-container {
+  background-color: $body_bg;
+  padding: rem(20) 0;
+  height:  rem(750);
+  .swiper-slide {
+    height: rem(750);
+    overflow: hidden;
+  }
+}
+.invite_tip {
+  height: rem(90);
+  line-height: rem(90);
+  text-align: center;
+}
+.save_poster {
+  color: #ffffff;
+  width: rem(570);
+  height: rem(90);
+  background-image: url('../img/btn.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  @include rowC;
+  margin: rem(40) auto;
+  img {
+    width: rem(32);
+    height: rem(32);
+    margin-right: rem(20);
+  }
+}
+

@@ -1,0 +1,183 @@
+@import "base";
+
+.search_box {
+  background-color: $navbar_bg;
+  .search {
+    position: relative;
+  }
+}
+
+.tab_nav {
+  height: rem(88);
+  align-items: center;
+  position: relative;
+  .tab_slides {
+    width: rem(650);
+  }
+  .tab_items {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.more_classify {
+  width: rem(88);
+  text-align: center;
+  border-left: 1px solid $line_color;
+  img {
+    width: rem(30);
+    height: rem(18);
+  }
+}
+
+.tab_item {
+  height: rem(44);
+  text-align: center;
+  padding: 0 rem(20);
+  &.active {
+    background-color: $primaryRed;
+    color: #ffffff;
+    border-radius: 0;
+  }
+}
+
+.tab_body {
+  border-top: 1px solid $line_color;
+  flex-wrap: wrap;
+  padding-top: rem(20);
+}
+
+.classify_items {
+  width: 20%;
+  text-align: center;
+  padding-bottom: rem(20);
+  img {
+    width: rem(86);
+    height: rem(86);
+  }
+  p {
+    font-size: $fontsize_desc24;
+  }
+}
+
+.swiper_banner {
+  height: rem(300);
+  .swiper-slide {
+    height: rem(300);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.nav_box {
+  padding: rem(20) 0;
+}
+
+.nav_item {
+  width: 20%;
+  text-align: center;
+  img {
+    width: rem(86);
+    height: rem(86);
+  }
+}
+
+.classify {
+  .tab_slides {
+    width: rem(750);
+  }
+}
+
+.weui-popup__container.weui-popup__container--visible {
+  position: absolute;
+  top: rem(88);
+}
+
+.weui-popup__modal {
+  border-top: 1px solid $line_color;
+  padding: rem(20) rem(30) 0;
+  flex-wrap: wrap;
+  .popup-bottom & {
+    top: 0;
+    height: fit-content;
+    width: auto;
+  }
+
+  .tab_item {
+    width: rem(150);
+    padding: 0;
+    margin-bottom: rem(20);
+    margin-right: rem(30);
+    background-color: #F8F8F8;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    &.active {
+      background-color: #FFEFF0;
+      color: $primaryRed;
+    }
+  }
+}
+
+.weui-popup__overlay {
+  height: 75%;
+}
+
+
+//shop
+.shop_index {
+  .head {
+    height: rem(88);
+    background-color: $primaryRed;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    img {
+      width: rem(104);
+      height: rem(104);
+      @include borderRadius(50%);
+      margin-top: rem(36);
+    }
+  }
+  .shop_info {
+    padding-top: rem(80);
+    .title {
+      font-size: $fontsize_bigtitle;
+    }
+    .media_desc {
+      @include rowC;
+    }
+  }
+  .info_tip {
+    font-size: $fontsize_desc20;
+    padding: rem(20);
+    @include rowBetween;
+  }
+  .label {
+    font-size: rem(16);
+    padding: 0 rem(6);
+    margin-left: rem(10);
+  }
+  .search_box {
+    background-color: transparent;
+    padding-top: 0;
+    position: relative;
+  }
+  .search_input {
+    padding-left: rem(40);
+    background-color: $body_bg;
+    width: rem(600);
+  }
+  .my_icon {
+    width: rem(94);
+    height: rem(60);
+    -webkit-background-size: rem(30) rem(30);
+    background-size: rem(30) rem(30);
+  }
+}
+
+
+

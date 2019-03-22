@@ -1,0 +1,103 @@
+.head {
+  padding-top: 0.32rem;
+  height: 3.2rem; }
+
+.search_box {
+  position: relative; }
+  .search_box .search_input {
+    background-color: #EEEEED;
+    padding-left: 0.48rem;
+    width: 9.92rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+
+.team_tab {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0.48rem;
+  padding: 0.32rem; }
+  .team_tab .team_tab_item {
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid #F6F5F5; }
+    .team_tab .team_tab_item:nth-last-child(1) {
+      border-right: none; }
+
+.team_list {
+  margin-top: 1.28rem; }
+  .team_list img {
+    width: 1.76rem;
+    height: 1.76rem; }
+  .team_list .text_desc {
+    flex-direction: row;
+    align-items: center; }
+  .team_list .copy_wechat {
+    width: 2.4rem;
+    height: 0.768rem;
+    line-height: 0.768rem;
+    border: 1px solid #FF2B33;
+    color: #FF2B33;
+    -moz-border-radius: 0.384rem;
+    -webkit-border-radius: 0.384rem;
+    border-radius: 0.384rem;
+    font-size: 0.32rem;
+    padding: 0 0.16rem;
+    text-align: center; }
+  .team_list .team_label {
+    border: 1px solid #F8C6D4;
+    line-height: normal;
+    width: fit-content;
+    padding: 0 0.16rem;
+    -moz-border-radius: 0.32rem;
+    -webkit-border-radius: 0.32rem;
+    border-radius: 0.32rem; }
+
+.media_box_item {
+  margin-bottom: 0;
+  border-bottom: 1px solid #F6F5F5; }
+
+.team_detail {
+  margin: 0.32rem; }
+  .team_detail .head {
+    height: fit-content; }
+  .team_detail .team_tab {
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.32rem; }
+  .team_detail .team_tab_item {
+    width: 25%;
+    border-right-style: dashed;
+    margin: 0; }
+
+.fans_info {
+  justify-content: space-between;
+  padding: 0.64rem 0.64rem 0.16rem; }
+  .fans_info img {
+    width: 1.28rem;
+    height: 1.28rem;
+    border-radius: 50%; }
+  .fans_info .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.fans_item {
+  margin-bottom: 0.32rem;
+  background-color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+  .fans_item .team_tab {
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #F6F5F5; }
+    .fans_item .team_tab:nth-last-child(1) {
+      border-bottom: none; }
+  .fans_item .team_tab_item {
+    width: 50%;
+    border-right-style: solid;
+    border-right-color: #d3d3d3; }
+
+/*# sourceMappingURL=myTeam.css.map */

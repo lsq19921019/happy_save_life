@@ -1,0 +1,121 @@
+@import "base";
+.head {
+  padding-top: rem(20);
+  height: rem(200);
+}
+
+.search_box {
+  position: relative;
+  .search_input {
+    background-color: #EEEEED;
+    padding-left: rem(30);
+    width: rem(620);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.team_tab {
+  @include borderRadius(5px);
+  margin: rem(30);
+  padding: rem(20);
+  .team_tab_item {
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid $line_color;
+    &:nth-last-child(1) {
+      border-right: none;
+    }
+  }
+}
+.team_list {
+  margin-top: rem(80);
+  img {
+    width: rem(110);
+    height: rem(110);
+  }
+  .text_desc {
+    flex-direction: row;
+    align-items: center;
+  }
+  .copy_wechat {
+    width: rem(150);
+    height: rem(48);
+    line-height: rem(48);
+    border: 1px solid $primaryRed;
+    color: $primaryRed;
+    @include borderRadius(rem(24));
+    font-size: $fontsize_desc20;
+    padding: 0 rem(10);
+    text-align: center;
+  }
+  .team_label {
+    border: 1px solid $pink;
+    line-height: normal;
+    width: fit-content;
+    padding: 0 rem(10);
+    @include borderRadius(rem(20));
+  }
+}
+.media_box_item {
+  margin-bottom: 0;
+  border-bottom: 1px solid $line_color;
+}
+
+//teamDetail
+.team_detail {
+  margin: rem(20);
+  .head {
+    height: fit-content;
+  }
+  .team_tab {
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, .1);
+    padding: rem(20);
+  }
+  .team_tab_item {
+    width: 25%;
+    border-right-style: dashed;
+    margin: 0;
+  }
+}
+.fans_info {
+  justify-content: space-between;
+  padding: rem(40) rem(40) rem(10);
+  img {
+    width: rem(80);
+    height: rem(80);
+    border-radius: 50%;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.fans_item {
+  margin-bottom: rem(20);
+  background-color: #fff;
+  @include borderRadius(5px);
+  .team_tab {
+    border-radius: 0;
+    background-color: transparent;
+    border-bottom: 1px solid $line_color;
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+  }
+  .team_tab_item {
+    width: 50%;
+    border-right-style: solid;
+    border-right-color: #d3d3d3;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+@import "base";
+.head {
+  background-color: #FF2A31;
+  color: #ffffff;
+}
+.head_earning {
+  position: relative;
+  height: rem(360);
+  @include colC;
+  .no_earning {
+    font-size: rem(52);
+    margin-bottom: rem(20);
+  }
+  .today_earning {
+    position: relative;
+    @include colC;
+    width: rem(222);
+    height: rem(222);
+    @include borderRadius(50%);
+    border: 6px solid #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .today_tip {
+    position: absolute;
+    right: rem(-160);
+    top: 0;
+  }
+  .tip_text {
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: rem(10);
+    &:before {
+      content: '';
+      position: absolute;
+      left: -50%;
+      bottom: 40%;
+      width: rem(50);
+      height: 1px;
+      background-color: #fff;
+      transform:rotate(-30deg);
+      -o-transform:rotate(-30deg);
+      -moz-transform:rotate(-30deg);
+      -webkit-transform:rotate(-30deg);
+    }
+  }
+  .earning_intro {
+    position: absolute;
+    bottom: rem(66);
+    right: 0;
+    width: rem(174);
+    height: rem(60);
+  }
+}
+
+.nav_box {
+  padding: rem(20);
+  background: rgba(0, 0, 0, .2);
+  .nav_item {
+    width: 33%;
+    text-align: center;
+    border-right: 1px solid $line_color;
+    &:nth-last-child(1) {
+      border-right: none;
+    }
+  }
+}
+.list_item {
+  img {
+    width: rem(34);
+    height: rem(34);
+  }
+}
+.earning_items {
+  background-color: #fff;
+  margin-bottom: rem(20);
+  .earning_item_h {
+    padding: rem(16);
+    border-bottom: $line_border;
+    text-align: center;
+    p {
+      width: 50%;
+      font-size: $fontsize_desc22;
+      &:nth-child(1) {
+        border-right: $line_border;
+      }
+      &.active {
+        color: $primaryRed;
+        font-size: $fontsize_title;
+      }
+    }
+  }
+  .nav_box {
+    background: transparent;
+  }
+  .nav_item {
+    border-right: none;
+  }
+}
+
+
+//收益明细
+.detail_list {
+  .date {
+    height: rem(90);
+    line-height: rem(90);
+    padding: 0 rem(20);
+  }
+  .title {
+    font-size: $fontsize_bigtitle;
+  }
+  .time {
+    font-size: $fontsize_desc20;
+    color: $col999;
+  }
+  .list_item {
+    border-bottom: $line_border;
+    &:nth-last-child(1) {
+      border-bottom: none;
+    }
+  }
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>乐省生活</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="body_bgc">
+<!--<div class="navbar">-->
+    <!--<div class="navbar_left"></div>-->
+    <!--<div class="navbar_center">乐省生活</div>-->
+    <!--<div class="navbar_right"></div>-->
+<!--</div>-->
+<div class="content">
+    <div class="good_box">
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/pic.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                <div class="media_desc shop">
+                    <img src="img/shop.png" alt="">
+                    <span class="color666 fz22">减肥茶专营店</span>
+                </div>
+                <div class="media_desc buy_num">
+                    <span>119人已买</span>
+                    <span class="card">110元券</span>
+                </div>
+                <p class="media_desc price">
+                    <span class="color_red">￥70</span>
+                    <span class="color999 fz20">原价100元</span>
+                </p>
+            </div>
+        </a>
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/pic.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                <div class="media_desc shop">
+                    <img src="img/shop.png" alt="">
+                    <span class="color666">减肥茶专营店</span>
+                </div>
+                <div class="media_desc share"><span>分享赚￥58.00</span></div>
+                <p class="media_desc price">
+                    <span class="color_red">￥70</span>
+                    <span class="color999 fz20">原价100元</span>
+                </p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script src="js/libs/jquery.min.js"></script>
+<script type="application/javascript" src="js/libs/fastclick.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    var galleryThumbs = new Swiper('.tab_slides', {
+//        spaceBetween: 10,
+        slidesPerView: 6,
+//        freeMode: true,
+//        watchSlidesVisibility: true,
+//        watchSlidesProgress: true,
+    });
+    var mySwiper = new Swiper('.swiper_banner', {
+        loop: true, // 循环模式选项
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    });
+    //下拉
+    $('.more_classify').click(function () {
+        $("#moreTab").addClass('weui-popup__container--visible').show();
+        $(".weui-popup__overlay").show();
+        // $(this).parents('body').css({'overflow':'hidden', 'position': 'fixed'});
+        $(this).parents('body').css({'overflow':'hidden'});
+    });
+    $('.weui-popup__overlay').click(function () {
+        $(this).parents('body').css({'overflow': 'auto', 'position': 'static'});
+    });
+    //点击
+    $('.tab_slides .tab_item').each(function (index) {
+        $(this).click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.weui-popup__modal .tab_item').eq(index).addClass('active').siblings().removeClass('active');
+            if (index != 0) {
+                // location.href = 'classify.html';
+                $('.tab_body').show();
+                $('#banner_container').hide();
+        $('#filter_box').show();
+        $('#nav_box').hide();
+        
+            }else{
+                $('.tab_body').hide();
+                $('#banner_container').show();
+        $('#filter_box').hide();
+        $('#nav_box').show();
+            }
+        });
+    });
+    $('.weui-popup__modal .tab_item').each(function (index) {
+        $(this).click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.tab_slides .tab_item').eq(index).addClass('active').siblings().removeClass('active');
+            if (index != 0) {
+                // location.href = 'classify.html';
+                $('.tab_body').show();
+                $('#banner_container').hide();
+        $('#filter_box').show();
+        $('#nav_box').hide();
+            }else{
+                $('.tab_body').hide();
+                $('#banner_container').show();
+        $('#filter_box').hide();
+        $('#nav_box').show();
+            }
+            $.closePopup();
+        });
+    });
+    $(document).ready(function(){
+        $('.tab_body').hide();
+        $('#filter_box').hide();
+    });
+</script>
+</body>
+</html>

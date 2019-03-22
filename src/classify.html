@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>乐省生活</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class="body_bgc">
+<div class="content">
+    <div class="search_box">
+        <div id="searchBtn" class="search body_bgc">
+            <!--<img class="icon_search" src="img/ss_ss_icon.png" alt="">-->
+            <i class="weui-icon-search"></i>
+            <input class="search_input" type="search" placeholder="输入关键词或粘贴宝贝标题">
+        </div>
+    </div>
+    <div class="tab_box marginb">
+        <div class="tab_nav bgwhite weui-flex classify">
+            <div class="swiper-container tab_slides">
+                <div class="swiper-wrapper tab_items">
+                    <div onclick="location.href='index.html'" class="tab_item swiper-slide">精选</div>
+                    <div class="tab_item swiper-slide active">百货</div>
+                    <div class="tab_item swiper-slide">食品</div>
+                    <div class="tab_item swiper-slide">母婴</div>
+                    <div class="tab_item swiper-slide">女装</div>
+                    <div class="tab_item swiper-slide">美妆</div>
+                    <div class="tab_item swiper-slide">电器</div>
+                    <div class="tab_item swiper-slide">鞋包</div>
+                    <div class="tab_item swiper-slide">女装</div>
+                    <div class="tab_item swiper-slide">男装</div>
+                    <div class="tab_item swiper-slide">数码</div>
+                    <div class="tab_item swiper-slide"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tab_body weui-flex bgwhite">
+            <a href="#" class="classify_items">
+                <img src="img/1-1.png" alt="">
+                <p>日用百货</p>
+            </a>
+            <a href="#" class="classify_items">
+                <img src="img/1-2.png" alt="">
+                <p>纸巾湿品</p>
+            </a>
+            <a href="#" class="classify_items">
+                <img src="img/1-3.png" alt="">
+                <p>厨房用品</p>
+            </a>
+            <a href="#" class="classify_items">
+                <img src="img/1-4.png" alt="">
+                <p>家庭清洁</p>
+            </a>
+            <a class="classify_items">
+                <img src="img/1-5.png" alt="">
+                <p>收纳整理</p>
+            </a>
+            <a class="classify_items">
+                <img src="img/1-1.png" alt="">
+                <p>洗护清洁</p>
+            </a>
+        </div>
+    </div>
+    <div class="filter weui-flex bgwhite">
+        <p class="active">综合</p>
+        <p>佣金比例</p>
+        <p>销量</p>
+       <!-- low_price: 低价， high_price：高价 -->
+        <p class="coupon_sort low_price">券后价</p>
+        <p class="sort2"><img src="img/sort2.png" alt=""></p>
+        <p>筛选<span class="my_icon icon_filter"></span></p>
+    </div>
+    <div class="good_box">
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/pic.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                <div class="media_desc shop">
+                    <img src="img/shop.png" alt="">
+                    <span class="color666 fz22">减肥茶专营店</span>
+                </div>
+                <div class="media_desc buy_num">
+                    <span>119人已买</span>
+                    <span class="card">110元券</span>
+                </div>
+                <p class="media_desc price">
+                    <span class="color_red">￥70</span>
+                    <span class="color999 fz20">原价100元</span>
+                </p>
+            </div>
+        </a>
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/pic.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                <div class="media_desc shop">
+                    <img src="img/shop.png" alt="">
+                    <span class="color666">减肥茶专营店</span>
+                </div>
+                <div class="media_desc share"> <span>分享赚￥58.00</span></div>
+                <p class="media_desc price">
+                    <span class="color_red">￥70</span>
+                    <span class="color999 fz20">原价100元</span>
+                </p>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="weui-tabbar">
+    <a href="classify.html" class="weui-tabbar__item weui-bar__item--on">
+        <div class="weui-tabbar__icon icon_index"></div>
+        <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a href="hotSearch.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon icon_hot"></div>
+        <p class="weui-tabbar__label">热搜</p>
+    </a>
+    <a href="person.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon icon_my"></div>
+        <p class="weui-tabbar__label">我的</p>
+    </a>
+</div>
+
+<script src="js/libs/jquery.min.js"></script>
+<script type="application/javascript" src="js/libs/fastclick.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    var galleryThumbs = new Swiper('.tab_slides', {
+        spaceBetween: 10,
+        slidesPerView: 6.5,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+
+    $('.tab_slides .tab_item').each(function (index ) {
+        $(this).click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+
+    $('.filter p').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+
+</script>
+</body>
+</html>

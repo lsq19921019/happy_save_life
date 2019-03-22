@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>乐省生活</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/person.css">
+</head>
+<body class="body_bgc">
+<div class="content">
+    <div class="head bgColRed">
+        <div class="info">
+            <div class="user_info weui-flex">
+                <div class="img_box marginR">
+                    <img src="img/pic.png" alt="">
+                </div>
+                <div class="role_label">
+                    <img src="img/tab_wode_pre.png" alt="">
+                    <span>分公司</span>
+                </div>
+                <div class="user_name">
+                    <p>用户名</p>
+                    <p class="fz20">ID：123 <span class="copy">复制</span></p>
+                </div>
+            </div>
+            <div class="bind">
+                <div class="bind_item" id="bindPhone" style="display: none;">
+                    <img src="img/my-phone.png" alt="">
+                    <p>绑定手机</p>
+                    <span class="my_icon icon_right_red"></span>
+                </div>
+                <div class="bind_item" id="bindWeChat">
+                    <img src="img/my-phone.png" alt="">
+                    <p>绑定微信</p>
+                    <span class="my_icon icon_right_red"></span>
+                </div>
+                <div class="bind_item" style="display: none;">
+                    <i class="weui-icon-success-circle"></i>
+                    <p>绑定成功</p>
+                    <span class="my_icon icon_right_red"></span>
+                </div>
+            </div>
+        </div>
+        <div class="earning_total bgwhite color333">
+            <div>累计收入：<span class="money color_red">888.00</span>元</div>
+            <a href="myGetCash.html" class="cash_btn bgColRed">提现</a>
+        </div>
+    </div>
+    <div class="nav_box weui-flex earning_list">
+        <div class="nav_item">
+            <p>0.00</p>
+            <p>今日收益</p>
+        </div>
+        <div class="nav_item">
+            <p>0.00</p>
+            <p>昨日收益</p>
+        </div>
+        <div class="nav_item">
+            <p>0.00</p>
+            <p>本月收益</p>
+        </div>
+        <div class="nav_item">
+            <p>0.00</p>
+            <p>上月收益</p>
+        </div>
+    </div>
+    <div class="nav_box weui-flex">
+        <a href="myEarnings.html" class="nav_item">
+            <img src="img/nav_newper.png" alt="">
+            <p>我的收益</p>
+        </a>
+        <a href="myOrder.html" class="nav_item">
+            <img src="img/nav_coupon.png" alt="">
+            <p>我的订单</p>
+        </a>
+        <a href="myTeam.html" class="nav_item">
+            <img src="img/nav_sort.png" alt="">
+            <p>我的团队</p>
+        </a>
+        <a href="myInviteFriends.html" class="nav_item">
+            <img src="img/nav_brandgood.png" alt="">
+            <p>邀请好友</p>
+        </a>
+        <div class="nav_item">
+            <img class="min_img" src="img/my_nav_add_partner.png" alt="">
+            <p>加入合伙人</p>
+        </div>
+        <a href="myCollect.html" class="nav_item">
+            <img class="min_img" src="img/my_nav_collect.png" alt="">
+            <p>收藏夹</p>
+        </a>
+        <div class="nav_item">
+            <img class="min_img" src="img/my_nav_msg.png" alt="">
+            <p>客服消息</p>
+        </div>
+    </div>
+
+    <div class="list bgwhite">
+        <div class="list_item">
+            <div class="item_l weui-flex">
+                <img src="img/my_nav_msg.png" alt="">
+                <span>距离下一特权，还差N成员</span>
+            </div>
+            <span class="my_icon icon_right"></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="weui-tabbar">
+    <a href="index.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon icon_index"></div>
+        <p class="weui-tabbar__label">首页</p>
+    </a>
+    <a href="hotSearch.html" class="weui-tabbar__item">
+        <div class="weui-tabbar__icon icon_hot"></div>
+        <p class="weui-tabbar__label">热搜</p>
+    </a>
+    <a href="person.html" class="weui-tabbar__item weui-bar__item--on">
+        <div class="weui-tabbar__icon icon_my"></div>
+        <p class="weui-tabbar__label">我的</p>
+    </a>
+</div>
+
+<script src="js/libs/jquery.min.js"></script>
+<script type="application/javascript" src="js/libs/fastclick.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+
+    $('#bindWeChat').click(function () {
+        $.prompt({
+            title: '手机号码已绑定',
+            text: '为方便您的好友联系您，请设置您的微信号：',
+            input: '在此填入您的微信号',
+            empty: false, // 是否允许为空
+            onOK: function (input) {
+                console.log(input);
+                //点击确认
+            },
+            onCancel: function () {
+                //点击取消
+            }
+        });
+    })
+
+</script>
+</body>
+</html>

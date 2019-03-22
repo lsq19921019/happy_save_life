@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,SAAU;EACR,KAAK,EAAE,KAAQ;EACf,MAAM,EAAE,OAAQ;EAChB,aAAI;IACF,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;;AAGhB,YAAa;EACX,QAAQ,EAAE,QAAQ;EAClB,aAAa,EAAE,OAAO;;AAExB,qCAAsC;EACpC,aAAa,EAAE,IAAI;EACnB,KAAK,ECRM,OAAO;;ADUpB,eAAgB;EACd,aAAa,EAAE,OAAO",
+"sources": ["hot-search.scss","base.scss"],
+"names": [],
+"file": "hot-search.css"
+}

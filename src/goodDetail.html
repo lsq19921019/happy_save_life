@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/goodDetail.css">
+</head>
+<body class="body_bgc">
+<div class="share_tips_container" style="width:35%;position: fixed;top: .5rem;right: 1rem;z-index: 101;display: none;">
+    <img src="img/share_tips.png" alt="" style="width:100%;">
+</div>    
+<div class="share_btn_layer" style="position:fixed;width:100%;height:100%;opacity:.7;background-color:#000;z-index: 100;display: none;"></div>
+<div class="content">
+    <div class="swiper-container">
+        <div class="swiper-wrapper" id="banner">
+            <div class="swiper-slide">
+                <img src="img/bg1.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/bg5.jpg" alt="" style="width: 100%;">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/bg9.jpg" alt="" style="width: 100%;">
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="good_info">
+        <div class="info_item price weui-flex">
+            <div>
+                <span class="color_red">￥99</span>
+                <span class="color999 fz22">原价￥184</span>
+            </div>
+            <div class="color999 fz22 tar">已拼2件</div>
+        </div>
+        <div class="info_item weui-flex info_title">
+            <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养 颜祛湿减肥茶240g</p>
+            <div class="collect_btn">
+                <img class="collect_img" src="img/collect.png" alt="">
+                <p>收藏</p>
+            </div>
+        </div>
+        <div class="media_desc fz20 color999 line_clamp_2">
+            【无需运动,喝茶就能减肥】风靡港台，无论是想通过减肥通便、还是做日常保健都行！完美解决“每逢过节胖三斤”烦恼的脂...
+        </div>
+        <div class="info_item coupon weui-flex">
+            <div class="coupon_price">￥110元优惠券</div>
+            <div class="coupon_date fz20">
+                <p class="tac">使用日期</p>
+                <p class="tac">2019.01.30-2019.02.31</p>
+            </div>
+        </div>
+        <div class="info_tip weui-flex">
+            <div class="tip_item">
+                <img src="img/jd_hover_icon.png" alt="">
+                退货包运费
+            </div>
+            <div class="tip_item">
+                <img src="img/jd_hover_icon.png" alt="">
+                全场包邮
+            </div>
+            <div class="tip_item">
+                <img src="img/jd_hover_icon.png" alt="">
+                7天退换
+            </div>
+            <div class="tip_item">
+                <img src="img/jd_hover_icon.png" alt="">
+                假一退十
+            </div>
+            <div class="open-popup" data-target="#introductions">
+                <span class="my_icon icon_right_gray"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="shop">
+        <a href="shop.html" class="media_box_item">
+            <div class="img_box">
+                <img src="img/pic.png" alt="">
+            </div>
+            <div class="text_desc weui-flex">
+                <div class="shop_info weui-flex__item">
+                    <p class="media_title">正品官方旗舰店</p>
+                    <div class="media_desc">
+                        <span class="marginR">商品数量 666</span>
+                        <span class="marginL">已拼 1328件</span>
+                    </div>
+                </div>
+                <div class="enter_shop">进店逛逛</div>
+            </div>
+        </a>
+        <div class="info_tip weui-flex">
+            <div class="tip_item">
+                <span class="color999">描述相符</span>
+                4.1
+                <span class="bgColRed label">高</span>
+            </div>
+            <div class="tip_item">
+                <span class="color999">卖家服务</span>
+                4.9
+                <span class="bgColRed label">高</span>
+            </div>
+            <div class="tip_item">
+                <span class="color999">物流服务</span>
+                4.8
+                <span class="bgColRed label">高</span>
+            </div>
+        </div>
+    </div>
+    <div class="good_detail bgwhite">
+        <div class="detail_head"><span>|</span> 商品详情</div>
+    </div>
+</div>
+
+<div id="introductions" class="weui-popup__container popup-bottom">
+    <div class="weui-popup__overlay"></div>
+    <div class="weui-popup__modal">
+        <div class="title tac">服务说明</div>
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/jd_hover_icon.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">退货包运费</p>
+                <div class="media_desc">确认收货前申请退货退款，消费者将会收到退货运费补贴</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/jd_hover_icon.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">极速退款</p>
+                <div class="media_desc">拼单成功6小时内，待发货状态下，提交退款申请将立即退款</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/jd_hover_icon.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">全场包邮</p>
+                <div class="media_desc">所有商品均无条件包邮</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="media_box_item">
+            <div class="img_box">
+                <img src="img/jd_hover_icon.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">7天退换</p>
+                <div class="media_desc">满足相应条件时，消费者可申请7天无理由退换货</div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="footer weui-flex">
+    <div>
+        <a href="index.html" class="link_index">
+            <div class="weui-tabbar__icon icon_index"></div>
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="javascript:;" class="share share_btn">
+            <div class="weui-tabbar__icon icon_share"></div>
+            <p class="weui-tabbar__label">分享</p>
+        </a>
+    </div>
+    <div class="weui-flex__item buy_box tar">
+        <a style="display: none;" href="javascript:;" class="buy bgColRed">立即购买</a>
+        <div class="coupon_share fz22 weui-flex">
+            <!-- <div class="bgColRed coupon_buy">
+                <p>券后 ￥74</p>
+                <p>购买再返￥20.14</p>
+            </div>
+            <div class="share_tip">分享赚￥20.14</div> -->
+            <div class="bgColRed coupon_buy" style="border-radius:1.4rem;">
+                立即购买
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="js/libs/jquery.min.js"></script>
+<script type="application/javascript" src="js/libs/fastclick.js"></script>
+<script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/base.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true, // 循环模式选项
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination',
+        }
+    });
+    $(document).ready(function(){
+        $('.share_btn').click(function(){
+            $('.share_btn_layer,.share_tips_container').show();
+        });
+        $('.share_btn_layer').click(function(){
+            $('.share_btn_layer,.share_tips_container').hide();
+        });
+    });
+
+</script>
+</body>
+</html>

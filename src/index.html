@@ -1,0 +1,353 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>乐省生活</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/weui.min.css">
+    <link rel="stylesheet" href="css/jquery-weui.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="body_bgc">
+    
+        
+        <div class="loading_box" style="width:50%;left:25%;top:25%;position:fixed;z-index: 601;color: #fff;text-align: center;">
+            <div style="margin-bottom:.5rem;"><img src="img/loading.gif"/></div>
+            <div>加载中...</div>
+        </div>
+        <div class="loading_layer" style="position:fixed;width:100%;height:100%;opacity:.7;background-color:#000;z-index: 600;"></div>
+    <!-- 转盘抽奖 -->
+
+
+
+<!-- 
+    <div class="rotate_box_small" style="width:2rem;position:fixed;right:.5rem;bottom:4rem;display: none;">
+        <img src="img/rotate_plate_small.gif" alt="" style="width:100%;">
+    </div>
+
+    <div class="rotate_box" style="width:80%;left:10%;top:5%;position:fixed;z-index:101;">
+            <div style="overflow:hidden;"><img src="img/rotate_plate.gif" style="width:100%;float: left;" alt=""/></div>
+            <div style="width:1%;margin:0 auto;height:1rem;background-color:#fff;"></div> 
+            <div style="width:10%;margin:0 auto;" class="rotate_plate_close"><img src="img/icon_close_btn.png" style="width:100%;" alt=""/></div> 
+    </div>
+    <div class="rotate_layer" style="position:fixed;width:100%;height:100%;opacity:.5;background-color:#000;z-index: 100;"></div>
+ -->
+
+
+    <!-- 转盘抽奖 -->
+
+    <!-- 红包 -->
+
+
+
+    
+    <!-- <div class="red_pack_box_small" style="width:2rem;position:fixed;right:.5rem;bottom:4rem;display: none;">
+        <img src="img/icon_red_pack_btn.png" alt="" style="width:100%;">
+    </div>
+
+    <div class="red_pack_box" style="width:80%;left:10%;top:5%;position:fixed;z-index:101;">
+            <div style="overflow:hidden;"><img src="img/red_pack_img.png" style="width:100%;float: left;" alt=""/></div>
+            <div style="width:1%;margin:0 auto;height:1rem;background-color:#fff;"></div> 
+            <div style="width:10%;margin:0 auto;" class="red_pack_close"><img src="img/icon_close_btn.png" style="width:100%;" alt=""/></div> 
+    </div>
+    <div class="red_pack_layer" style="position:fixed;width:100%;height:100%;opacity:.5;background-color:#000;z-index: 100;"></div> -->
+
+
+
+    <!-- 红包 -->
+
+    <!--<div class="navbar">-->
+    <!--<div class="navbar_left"></div>-->
+    <!--<div class="navbar_center">乐省生活</div>-->
+    <!--<div class="navbar_right"></div>-->
+    <!--</div>-->
+    <div class="content">
+        <div class="search_box">
+            <div id="searchBtn" class="search body_bgc">
+                <i class="weui-icon-search"></i>
+                <input class="search_input" type="search" placeholder="输入关键词或粘贴宝贝标题">
+            </div>
+        </div>
+        <div class="tab_box">
+            <div class="tab_nav bgwhite weui-flex">
+                <div class="swiper-container tab_slides">
+                    <div class="swiper-wrapper tab_items">
+                        <!-- <div onclick="location.href='index.html'" class="tab_item swiper-slide active">精选</div> -->
+                        <div class="tab_item swiper-slide active">精选</div>
+                        <div class="tab_item swiper-slide ">百货</div>
+                        <div class="tab_item swiper-slide">食品</div>
+                        <div class="tab_item swiper-slide">母婴</div>
+                        <div class="tab_item swiper-slide">女装</div>
+                        <div class="tab_item swiper-slide">美妆</div>
+                        <div class="tab_item swiper-slide">电器</div>
+                        <div class="tab_item swiper-slide">鞋包</div>
+                        <div class="tab_item swiper-slide">女装</div>
+                        <div class="tab_item swiper-slide">男装</div>
+                        <div class="tab_item swiper-slide">数码</div>
+                        <div class="tab_item swiper-slide">&nbsp;</div>
+                        <div class="tab_item swiper-slide">&nbsp;</div>
+                        <div class="tab_item swiper-slide">&nbsp;</div>
+                    </div>
+                </div>
+                <div class="more_classify">
+                    <img src="img/jt_down.png.png" alt="">
+                </div>
+                <div id="moreTab" class="weui-popup__container popup-bottom">
+                    <div class="weui-popup__overlay"></div>
+                    <div class="weui-popup__modal weui-flex bgwhite">
+                        <div onclick="location.href='index.html'" class="swiper-slide tab_item ">精选</div>
+                        <div class="swiper-slide tab_item active">百货</div>
+                        <div class="swiper-slide tab_item">食品</div>
+                        <div class="swiper-slide tab_item">母婴</div>
+                        <div class="swiper-slide tab_item">女装</div>
+                        <div class="swiper-slide tab_item">美妆</div>
+                        <div class="swiper-slide tab_item">电器</div>
+                        <div class="swiper-slide tab_item">鞋包</div>
+                        <div class="swiper-slide tab_item">女装</div>
+                        <div class="swiper-slide tab_item">男装</div>
+                        <div class="swiper-slide tab_item">数码</div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="tab_body weui-flex bgwhite">
+                <a href="#" class="classify_items">
+                    <img src="img/1-1.png" alt="">
+                    <p>日用百货</p>
+                </a>
+                <a href="#" class="classify_items">
+                    <img src="img/1-2.png" alt="">
+                    <p>纸巾湿品</p>
+                </a>
+                <a href="#" class="classify_items">
+                    <img src="img/1-3.png" alt="">
+                    <p>厨房用品</p>
+                </a>
+                <a href="#" class="classify_items">
+                    <img src="img/1-4.png" alt="">
+                    <p>家庭清洁</p>
+                </a>
+                <a class="classify_items">
+                    <img src="img/1-5.png" alt="">
+                    <p>收纳整理</p>
+                </a>
+                <a class="classify_items">
+                    <img src="img/1-1.png" alt="">
+                    <p>洗护清洁</p>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-container swiper_banner" id="banner_container">
+            <div class="swiper-wrapper" id="banner">
+                <div class="swiper-slide" onclick="window.location.href = 'goodsList.html'" style="background-image:url('img/bg1.jpg');background-position: center;background-size: cover;"></div>
+                <div class="swiper-slide" onclick="window.location.href = 'goodsList.html'" style="background-image:url('img/bg5.jpg');background-position: center;background-size: cover;"></div>
+                <div class="swiper-slide" onclick="window.location.href = 'goodsList.html'" style="background-image:url('img/bg9.jpg');background-position: center;background-size: cover;"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div id="nav_box" class="nav_box weui-flex bgwhite marginb">
+            <a class="nav_item" href="goodsList.html">
+                <img src="img/nav_redpack.png" alt="">
+                <p>多多红包</p>
+            </a>
+            <a class="nav_item" href="goodsList.html">
+                <img src="img/nav_newper.png" alt="">
+                <p>新人免单</p>
+            </a>
+            <a class="nav_item" href="goodsList.html">
+                <img src="img/nav_coupon.png" alt="">
+                <p>高额神劵</p>
+            </a>
+            <a class="nav_item" href="goodsList.html">
+                <img src="img/nav_sort.png" alt="">
+                <p>爆款排行</p>
+            </a>
+            <a class="nav_item" href="goodsList.html">
+                <img src="img/nav_brandgood.png" alt="">
+                <p>品牌好货</p>
+            </a>
+        </div>
+        <div id="filter_box" class="filter weui-flex bgwhite">
+            <p class="active">综合</p>
+            <p>佣金比例</p>
+            <p>销量</p>
+            <!-- low_price: 低价， high_price：高价 -->
+            <p class="coupon_sort low_price">券后价</p>
+            <p class="sort2"><img src="img/sort2.png" alt=""></p>
+            <p>筛选<span class="my_icon icon_filter"></span></p>
+        </div>
+        <div class="good_box">
+            <a href="javascript:;" class="media_box_item">
+                <div class="img_box">
+                    <img src="img/pic.png" alt="">
+                </div>
+                <div class="text_desc">
+                    <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                    <div class="media_desc shop">
+                        <img src="img/shop.png" alt="">
+                        <span class="color666 fz22">减肥茶专营店</span>
+                    </div>
+                    <div class="media_desc buy_num">
+                        <span>119人已买</span>
+                        <span class="card">110元券</span>
+                    </div>
+                    <p class="media_desc price">
+                        <span class="color_red">￥70</span>
+                        <span class="color999 fz20">原价100元</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascript:;" class="media_box_item">
+                <div class="img_box">
+                    <img src="img/pic.png" alt="">
+                </div>
+                <div class="text_desc">
+                    <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
+                    <div class="media_desc shop">
+                        <img src="img/shop.png" alt="">
+                        <span class="color666">减肥茶专营店</span>
+                    </div>
+                    <div class="media_desc share"><span>分享赚￥58.00</span></div>
+                    <p class="media_desc price">
+                        <span class="color_red">￥70</span>
+                        <span class="color999 fz20">原价100元</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item weui-bar__item--on">
+            <div class="weui-tabbar__icon icon_index"></div>
+            <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="hotSearch.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon icon_hot"></div>
+            <p class="weui-tabbar__label">热搜</p>
+        </a>
+        <a href="person.html" class="weui-tabbar__item">
+            <div class="weui-tabbar__icon icon_my"></div>
+            <p class="weui-tabbar__label">我的</p>
+        </a>
+    </div>
+
+    <script src="js/libs/jquery.min.js"></script>
+    <script type="application/javascript" src="js/libs/fastclick.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+    <script src="js/libs/swiper.min.js"></script>
+    <script src="js/base.js"></script>
+    <script>
+        var galleryThumbs = new Swiper('.tab_slides', {
+            //        spaceBetween: 10,
+            slidesPerView: 6,
+            //        freeMode: true,
+            //        watchSlidesVisibility: true,
+            //        watchSlidesProgress: true,
+        });
+        var mySwiper = new Swiper('.swiper_banner', {
+            loop: true, // 循环模式选项
+            autoplay: true,
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+        //下拉
+        $('.more_classify').click(function () {
+            $("#moreTab").addClass('weui-popup__container--visible').show();
+            $(".weui-popup__overlay").show();
+            // $(this).parents('body').css({'overflow':'hidden', 'position': 'fixed'});
+            $(this).parents('body').css({
+                'overflow': 'hidden'
+            });
+        });
+        $('.weui-popup__overlay').click(function () {
+            $(this).parents('body').css({
+                'overflow': 'auto',
+                'position': 'static'
+            });
+        });
+        //点击
+        $('.tab_slides .tab_item').each(function (index) {
+            $(this).click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                $('.weui-popup__modal .tab_item').eq(index).addClass('active').siblings().removeClass(
+                    'active');
+                if (index != 0) {
+                    // location.href = 'classify.html';
+                    $('.tab_body').show();
+                    $('#banner_container').hide();
+                    $('#filter_box').show();
+                    $('#nav_box').hide();
+
+                } else {
+                    $('.tab_body').hide();
+                    $('#banner_container').show();
+                    $('#filter_box').hide();
+                    $('#nav_box').show();
+                }
+            });
+        });
+        $('.weui-popup__modal .tab_item').each(function (index) {
+            $(this).click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                $('.tab_slides .tab_item').eq(index).addClass('active').siblings().removeClass('active');
+                if (index != 0) {
+                    // location.href = 'classify.html';
+                    $('.tab_body').show();
+                    $('#banner_container').hide();
+                    $('#filter_box').show();
+                    $('#nav_box').hide();
+                } else {
+                    $('.tab_body').hide();
+                    $('#banner_container').show();
+                    $('#filter_box').hide();
+                    $('#nav_box').show();
+                }
+                $.closePopup();
+            });
+        });
+        $(document).ready(function () {
+            $('.tab_body').hide();
+            $('#filter_box').hide();
+            $('#nav_box>a').attr('href', 'goodsList.html');
+
+
+            //转盘抽奖逻辑；
+            $('.rotate_plate_close,.rotate_layer').click(function(){
+                $('.rotate_box,.rotate_layer').hide();
+                $('.rotate_box_small').show();
+            });
+            $('.rotate_box_small').click(function(){
+                $('.rotate_box,.rotate_layer').show();
+                $('.rotate_box_small').hide();
+            });
+
+
+            //红包逻辑；
+            $('.red_pack_close,.red_pack_layer').click(function(){
+                $('.red_pack_box,.red_pack_layer').hide();
+                $('.red_pack_box_small').show();
+            });
+            $('.red_pack_box_small').click(function(){
+                $('.red_pack_box,.red_pack_layer').show();
+                $('.red_pack_box_small').hide();
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

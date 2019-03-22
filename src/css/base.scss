@@ -1,0 +1,73 @@
+$designWidth: 750;
+$number: 12;
+$font_size: $designWidth/$number;
+@function rem($px) {
+  @return $px/$font_size * 1rem;
+}
+
+$primaryRed: #FF2B33;
+
+$black: #010101;
+$col666: #666666;
+$col999: #999999;
+$light_gray: #b2b2b2;
+$navbar_bg: #EEEEED;
+$line_color: #F6F5F5;
+$body_bg: #F6F5F5;
+
+$deep_blue: #19659b;
+$blue: #1b8ecc;
+$green: #22ac38;
+$yellow: #e7b940;
+$orange: #FD7609;
+
+
+$pink: #F8C6D4;
+
+$line_border: 1px solid $line_color;
+
+$fontsize_nav: rem(34);
+$fontsize_bigtitle: rem(32);
+$fontsize_title: rem(30);
+$fontsize_content: rem(28);
+$fontsize_desc24: rem(24);
+$fontsize_desc22: rem(22);
+$fontsize_desc20: rem(20);
+
+@mixin borderRadius($num) {
+  -moz-border-radius: $num;
+  -webkit-border-radius: $num;
+  border-radius: $num;
+}
+@mixin rowC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin rowR {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@mixin rowBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin rowAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin  colC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin colBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

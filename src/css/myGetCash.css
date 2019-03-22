@@ -1,0 +1,38 @@
+.weui-cells_form {
+  margin: 0.32rem; }
+  .weui-cells_form .weui-cell:before {
+    left: 0; }
+  .weui-cells_form .weui-label {
+    width: 1.92rem; }
+
+.swiper-container {
+  background-color: #F6F5F5;
+  padding: 0.32rem 0;
+  height: 12rem; }
+  .swiper-container .swiper-slide {
+    height: 12rem;
+    overflow: hidden; }
+
+.invite_tip {
+  height: 1.44rem;
+  line-height: 1.44rem;
+  text-align: center; }
+
+.save_poster {
+  color: #ffffff;
+  width: 9.12rem;
+  height: 1.44rem;
+  background-image: url("../img/btn.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.64rem auto; }
+  .save_poster img {
+    width: 0.512rem;
+    height: 0.512rem;
+    margin-right: 0.32rem; }
+
+/*# sourceMappingURL=myGetCash.css.map */
