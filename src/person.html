@@ -24,7 +24,10 @@
                 </div>
                 <div class="user_name">
                     <p>用户名</p>
-                    <p class="fz20">ID：123 <span class="copy">复制</span></p>
+                    <!-- 一键复制    liusiqi--2019-04-02-->
+                    <p class="fz20" style="font-size:.4rem;">ID：<span class="user_id">123</span> <span  id="id_copy" data-clipboard-target=".user_id" data-clipboard-action="copy" class="copy_btn">复制</span></p>
+                    
+<!-- 一键复制    liusiqi--2019-04-02-->
                 </div>
             </div>
             <div class="bind">
@@ -131,6 +134,9 @@
 <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
 <script src="js/libs/swiper.min.js"></script>
 <script src="js/base.js"></script>
+<!-- 一键复制    liusiqi--2019-04-02-->
+<script src="js/libs/clipboard.min.js"></script>
+<!-- 一键复制    liusiqi--2019-04-02-->
 <script>
 
     $('#bindWeChat').click(function () {
@@ -148,7 +154,15 @@
             }
         });
     })
-
+            //一键复制 -----liusiqi--2019-04-02
+            $(".copy_btn").click(function(){
+                            var clipboard = new ClipboardJS("#id_copy");
+                            alert("复制成功");
+                            clipboard.on("success",function (element) {//复制成功的回调
+                            });
+                            clipboard.on("error",function (element) {//复制失败的回调
+                            })
+                        })
 </script>
 </body>
 </html>

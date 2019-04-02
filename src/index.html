@@ -18,11 +18,11 @@
 <body class="body_bgc">
     
         
-        <div class="loading_box" style="width:50%;left:25%;top:25%;position:fixed;z-index: 601;color: #fff;text-align: center;">
+        <!-- <div class="loading_box" style="width:50%;left:25%;top:25%;position:fixed;z-index: 601;color: #fff;text-align: center;">
             <div style="margin-bottom:.5rem;"><img src="img/loading.gif"/></div>
             <div>加载中...</div>
         </div>
-        <div class="loading_layer" style="position:fixed;width:100%;height:100%;opacity:.7;background-color:#000;z-index: 600;"></div>
+        <div class="loading_layer" style="position:fixed;width:100%;height:100%;opacity:.7;background-color:#000;z-index: 600;"></div> -->
     <!-- 转盘抽奖 -->
 
 
@@ -157,28 +157,30 @@
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
         </div>
+        <!-- 样式调整 -- 2019/04/02 -- liusiqi -->
         <div id="nav_box" class="nav_box weui-flex bgwhite marginb">
             <a class="nav_item" href="goodsList.html">
                 <img src="img/nav_redpack.png" alt="">
-                <p>多多红包</p>
+                <p style="font-size:.3rem;">多多红包</p>
             </a>
             <a class="nav_item" href="goodsList.html">
                 <img src="img/nav_newper.png" alt="">
-                <p>新人免单</p>
+                <p style="font-size:.3rem;">新人免单</p>
             </a>
             <a class="nav_item" href="goodsList.html">
                 <img src="img/nav_coupon.png" alt="">
-                <p>高额神劵</p>
+                <p style="font-size:.3rem;">高额神劵</p>
             </a>
             <a class="nav_item" href="goodsList.html">
                 <img src="img/nav_sort.png" alt="">
-                <p>爆款排行</p>
+                <p style="font-size:.3rem;">爆款排行</p>
             </a>
             <a class="nav_item" href="goodsList.html">
                 <img src="img/nav_brandgood.png" alt="">
-                <p>品牌好货</p>
+                <p style="font-size:.3rem;">品牌好货</p>
             </a>
         </div>
+        <!-- 样式调整 -- 2019/04/02 -- liusiqi -->
         <div id="filter_box" class="filter weui-flex bgwhite">
             <p class="active">综合</p>
             <p>佣金比例</p>
@@ -197,15 +199,20 @@
                     <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
                     <div class="media_desc shop">
                         <img src="img/shop.png" alt="">
-                        <span class="color666 fz22">减肥茶专营店</span>
+                        <!-- 样式调整 -- 2019/04/02 -- liusiqi -->
+                        <span class="color666 fz22" style="display:inline-block;margin-left:.2rem;">减肥茶专营店</span>
+                        <!-- 样式调整 -- 2019/04/02 -- liusiqi -->
                     </div>
                     <div class="media_desc buy_num">
                         <span>119人已买</span>
                         <span class="card">110元券</span>
                     </div>
                     <p class="media_desc price">
-                        <span class="color_red">￥70</span>
-                        <span class="color999 fz20">原价100元</span>
+                        <!-- 样式调整 -- 2019/04/02 -- liusiqi -->
+                        <span class="color_red" style="font-size:.8rem;font-weight: bolder;">￥70</span>
+                        
+                        <span class="color999 fz20" style="text-decoration:line-through;">拼多多价100元</span>
+                        <!-- 样式调整 -- 2019/04/02 -- liusiqi -->
                     </p>
                 </div>
             </a>
@@ -217,12 +224,12 @@
                     <p class="media_title">买2送1脂流茶清脂茶湿胖茶红豆薏米茶排毒养颜祛湿减肥茶240g</p>
                     <div class="media_desc shop">
                         <img src="img/shop.png" alt="">
-                        <span class="color666">减肥茶专营店</span>
+                        <span class="color666" style="display:inline-block;margin-left:.2rem;">减肥茶专营店</span>
                     </div>
                     <div class="media_desc share"><span>分享赚￥58.00</span></div>
                     <p class="media_desc price">
-                        <span class="color_red">￥70</span>
-                        <span class="color999 fz20">原价100元</span>
+                        <span class="color_red" style="font-size:.8rem;font-weight: bolder;">￥70</span>
+                        <span class="color999 fz20" style="text-decoration:line-through;">拼多多价100元</span>
                     </p>
                 </div>
             </a>
@@ -243,7 +250,8 @@
         </a>
     </div>
 
-    <script src="js/libs/jquery.min.js"></script>
+    <!-- <script src="js/libs/jquery.min.js"></script> -->
+    <script src="js/libs/zepto.min.js"></script>
     <script type="application/javascript" src="js/libs/fastclick.js"></script>
     <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
     <script src="js/libs/swiper.min.js"></script>
@@ -301,6 +309,15 @@
         });
         $('.weui-popup__modal .tab_item').each(function (index) {
             $(this).click(function () {
+                
+                    //    <!-- js脚本调整 -- 2019/3/28 -- liusiqi -->
+                if(index>=6){
+                    var width_dom = ($('.tab_slides .tab_item').width())*5;
+                    $('.tab_slides .tab_items').css({'transform':'translate3d(-'+width_dom+'px, 0px, 0px)'});
+                }else{
+                    $('.tab_slides .tab_items').css({'transform':'translate3d(0px, 0px, 0px)'});
+                }
+                    //    <!-- js脚本调整 -- 2019/3/28 -- liusiqi -->
                 $(this).addClass('active').siblings().removeClass('active');
                 $('.tab_slides .tab_item').eq(index).addClass('active').siblings().removeClass('active');
                 if (index != 0) {
@@ -319,6 +336,10 @@
             });
         });
         $(document).ready(function () {
+            var screen_width = '';
+            $(window).resize(function(){
+                screen_width = window.outerWidth;
+            });
             $('.tab_body').hide();
             $('#filter_box').hide();
             $('#nav_box>a').attr('href', 'goodsList.html');
@@ -346,6 +367,10 @@
             });
 
 
+            //首页列表布局切换    liusiqi--2019-04-02-->;
+            $('.sort2').click(function () {
+                $('.good_box').toggleClass('grid');
+            });
         });
     </script>
 </body>

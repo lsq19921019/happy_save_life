@@ -35,8 +35,11 @@
     <div class="good_info">
         <div class="info_item price weui-flex">
             <div>
-                <span class="color_red">￥99</span>
-                <span class="color999 fz22">原价￥184</span>
+                
+<!-- 样式调整    liusiqi--2019-04-02-->
+                <span class="color_red" style="font-size:.8rem;font-weight:bolder;">￥99</span>
+                <span class="color999 fz22" style="text-decoration:line-through;">拼多多价￥184</span>
+<!-- 样式调整    liusiqi--2019-04-02-->
             </div>
             <div class="color999 fz22 tar">已拼2件</div>
         </div>
@@ -47,37 +50,45 @@
                 <p>收藏</p>
             </div>
         </div>
-        <div class="media_desc fz20 color999 line_clamp_2">
+        <!-- 样式调整    liusiqi--2019-04-02-->
+        <div class="media_desc fz20 color999 line_clamp_2 media_desc_prod">
             【无需运动,喝茶就能减肥】风靡港台，无论是想通过减肥通便、还是做日常保健都行！完美解决“每逢过节胖三斤”烦恼的脂...
         </div>
-        <div class="info_item coupon weui-flex">
+        <!-- 样式调整    liusiqi--2019-04-02-->
+        <div class="info_item coupon weui-flex" style="border-left:2px dashed #fff;border-right:2px dashed #fff;">
             <div class="coupon_price">￥110元优惠券</div>
             <div class="coupon_date fz20">
-                <p class="tac">使用日期</p>
-                <p class="tac">2019.01.30-2019.02.31</p>
+                <p class="tac">使用期限</p>
+                <p class="tac">2019-01-30</p>
             </div>
         </div>
-        <div class="info_tip weui-flex">
-            <div class="tip_item">
-                <img src="img/jd_hover_icon.png" alt="">
-                退货包运费
-            </div>
-            <div class="tip_item">
-                <img src="img/jd_hover_icon.png" alt="">
-                全场包邮
-            </div>
-            <div class="tip_item">
-                <img src="img/jd_hover_icon.png" alt="">
-                7天退换
-            </div>
-            <div class="tip_item">
-                <img src="img/jd_hover_icon.png" alt="">
-                假一退十
-            </div>
-            <div class="open-popup" data-target="#introductions">
-                <span class="my_icon icon_right_gray"></span>
+        <!-- 样式调整    liusiqi--2019-04-02-->
+
+        <!-- 点击事件服务说明绑定 --  2019/3/28  --  liusiqi   -->
+        <div class="open-popup" data-target="#introductions">
+            <div class="info_tip weui-flex">
+                <div class="tip_item">
+                    <img src="img/jd_hover_icon.png" alt="">
+                    退货包运费
+                </div>
+                <div class="tip_item">
+                    <img src="img/jd_hover_icon.png" alt="">
+                    全场包邮
+                </div>
+                <div class="tip_item">
+                    <img src="img/jd_hover_icon.png" alt="">
+                    7天退换
+                </div>
+                <div class="tip_item">
+                    <img src="img/jd_hover_icon.png" alt="">
+                    假一退十
+                </div>
+                <div >
+                    <span class="my_icon icon_right_gray"></span>
+                </div>
             </div>
         </div>
+        <!-- 点击事件服务说明绑定 -->
 
     </div>
     <div class="shop">
@@ -119,29 +130,22 @@
     </div>
 </div>
 
+<!-- 服务说明调整    liusiqi--2019-04-02-->
 <div id="introductions" class="weui-popup__container popup-bottom">
     <div class="weui-popup__overlay"></div>
     <div class="weui-popup__modal">
         <div class="title tac">服务说明</div>
-        <a href="javascript:;" class="media_box_item">
-            <div class="img_box">
-                <img src="img/jd_hover_icon.png" alt="">
-            </div>
-            <div class="text_desc">
-                <p class="media_title">退货包运费</p>
-                <div class="media_desc">确认收货前申请退货退款，消费者将会收到退货运费补贴</div>
-            </div>
-        </a>
-        <a href="javascript:;" class="media_box_item">
+        <a href="javascript:;" class="media_box_item" style="padding-left: .8rem;padding-right: .8rem;">
             <div class="img_box">
                 <img src="img/jd_hover_icon.png" alt="">
             </div>
             <div class="text_desc">
                 <p class="media_title">极速退款</p>
+                <!--退货包运费 <div class="media_desc">确认收货前申请退货退款，消费者将会收到退货运费补贴</div> -->
                 <div class="media_desc">拼单成功6小时内，待发货状态下，提交退款申请将立即退款</div>
             </div>
         </a>
-        <a href="javascript:;" class="media_box_item">
+        <a href="javascript:;" class="media_box_item" style="padding-left: .8rem;padding-right: .8rem;">
             <div class="img_box">
                 <img src="img/jd_hover_icon.png" alt="">
             </div>
@@ -150,7 +154,7 @@
                 <div class="media_desc">所有商品均无条件包邮</div>
             </div>
         </a>
-        <a href="javascript:;" class="media_box_item">
+        <a href="javascript:;" class="media_box_item" style="padding-left: .8rem;padding-right: .8rem;">
             <div class="img_box">
                 <img src="img/jd_hover_icon.png" alt="">
             </div>
@@ -159,10 +163,30 @@
                 <div class="media_desc">满足相应条件时，消费者可申请7天无理由退换货</div>
             </div>
         </a>
+        <a href="javascript:;" class="media_box_item" style="padding-left: .8rem;padding-right: .8rem;">
+            <div class="img_box">
+                <img src="img/jd_hover_icon.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">48小时发货</p>
+                <div class="media_desc">若超时未发货，消费者将会收到至少3元无门槛代金券</div>
+            </div>
+        </a>
+        <a href="javascript:;" class="media_box_item" style="padding-left: .8rem;padding-right: .8rem;">
+            <div class="img_box">
+                <img src="img/jd_hover_icon.png" alt="">
+            </div>
+            <div class="text_desc">
+                <p class="media_title">假一赔十</p>
+                <div class="media_desc">若收到商品是假冒品牌，可获得十倍赔偿</div>
+            </div>
+        </a>
     </div>
 </div>
-
-<div class="footer weui-flex">
+<!-- 服务说明调整    liusiqi--2019-04-02-->
+<!-- 底边栏边距调整    liusiqi--2019-04-02-->
+<div class="footer weui-flex" style="box-sizing:border-box;padding:0 .4rem;">
+<!-- 底边栏边距调整     liusiqi--2019-04-02-->
     <div>
         <a href="index.html" class="link_index">
             <div class="weui-tabbar__icon icon_index"></div>
@@ -210,8 +234,18 @@
         $('.share_btn_layer').click(function(){
             $('.share_btn_layer,.share_tips_container').hide();
         });
-    });
 
+
+        //商品描述展示--隐藏;liusiqi--2019-04-02
+        $('.media_desc_prod').click(function(){
+            var this_ = $(this);
+            if(this_.hasClass('line_clamp_2')){
+                $(this).removeClass('line_clamp_2');
+            }else{
+                $(this).addClass('line_clamp_2');
+            }
+        });
+    });
 </script>
 </body>
 </html>
