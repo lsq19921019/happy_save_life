@@ -25,9 +25,11 @@ var gulp = require('gulp'),
     rename = require("gulp-rename"),
     del = require('del'),
     browserSync = require('browser-sync').create(),
-    proxyMiddleware = require('http-proxy-middleware');
-    var babel = require("gulp-babel");    // 用于ES6转化ES5
-    var sass = require('gulp-sass');
+    proxyMiddleware = require('http-proxy-middleware'),
+    less = require('gulp-less'),
+    fileinclude  = require('gulp-file-include');
+    // var babel = require("gulp-babel");    // 用于ES6转化ES5
+    // var sass = require('gulp-sass');
 
 gulp.task('build', function () {
 
@@ -97,27 +99,39 @@ const proxy_ = proxyMiddleware('/web', {target: origin_2, changeOrigin: true});
 const proxy1 = proxyMiddleware('/system', {target: origin_2, changeOrigin: true});
 const proxy2 = proxyMiddleware('/xjbk', {target: origin_2, changeOrigin: true});
 gulp.task("server", function () {
-    browserSync.init({
-        server: {
-            baseDir: baseDir,
-            middleware:[proxy,proxy1,proxy2,proxy_]
-        },
-        port:8050
-    });
+    gulp.start(["fileinclude"]);
+    // gulp.start(['fileinclude']).then(function(){
+        browserSync.init({
+            server: {
+                baseDir: baseDir,
+                middleware:[proxy,proxy1,proxy2,proxy_]
+            },
+            port:8050
+        });
 
-    gulp.watch([baseDir + "**/*.html", baseDir + "**/*.js", baseDir + "**/*.css", ]).on('change', function(){
-    //     gulp.src(baseDir + "**/*.scss")
-    // // 进行Sass文件的编译
-    //   .pipe(sass({
-    //     outputStyle: 'expanded'
-    //   })
-    //   // 定义Sass文件编译过程中发生错误的响应处理(如果没有它，一旦发生错误则直接退出脚本)
-    //     .on('error', sass.logError))
-    //   // 编译后的css文件保存在css目录下
-    //   .pipe(gulp.dest('css'));
+        gulp.watch([baseDir + "**/*.html", baseDir + "**/*.js", baseDir + "**/*.css", ]).on('change', function(){
+        //     gulp.src(baseDir + "**/*.scss")
+        // // 进行Sass文件的编译
+        //   .pipe(sass({
+        //     outputStyle: 'expanded'
+        //   })
+        //   // 定义Sass文件编译过程中发生错误的响应处理(如果没有它，一旦发生错误则直接退出脚本)
+        //     .on('error', sass.logError))
+        //   // 编译后的css文件保存在css目录下
+        //   .pipe(gulp.dest('css'));
 
-        browserSync.reload;
-    });
+            browserSync.reload;
+        });
+    // });
+});
+//静态页面嵌套模块
+gulp.task('fileinclude', function() {
+    gulp.src('src/*.html')
+        .pipe(fileinclude({
+          prefix: '@@'
+          
+        }))
+    .pipe(gulp.dest('dist_/view'));
 });
 
 gulp.task("clean", function() {
